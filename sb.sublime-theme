@@ -1,3 +1,7 @@
+// TODO: Пересмотреть эти эконки
+// SIDEBAR - OPEN FILE ICONS
+// SIDEBAR - GENERAL FILE ICONS
+
 [
 /*
  * Autor: umpirsky/A.markdown - Sublime Text Monokai Sidebar Theme.
@@ -318,6 +322,9 @@
 "shadow_color": [29, 29, 22],
 "shadow_offset": [0, 1]
 },
+
+
+
 {
 "class": "sidebar_label",
 "color": [207, 207, 194]
@@ -335,6 +342,163 @@
     "settings": "bold_folder_labels",
     "font.bold": true
 },
+
+
+//
+// SIDEBAR - OPEN FILE ICONS
+//
+
+    // Sidebar file close
+    {
+        "class": "close_button",
+        "layer0.texture": "sb-sublimeTheme/Assets/file-close.png",
+        "layer0.inner_margin": 0,
+        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.opacity": 0.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.opacity": 0.65
+    },
+    // Sidebar file dirty
+    {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "layer0.texture": "sb-sublimeTheme/Assets/file-dirty.png",
+        "layer0.opacity": 0.65
+    },
+    {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "sb-sublimeTheme/Assets/file-dirty.png",
+        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "sb-sublimeTheme/Assets/file-close-hover.png"
+    },
+    // Sidebar file close hover
+    {
+        "class": "close_button",
+        "attributes": ["hover"],
+        "layer0.texture": "sb-sublimeTheme/Assets/file-close-hover.png",
+        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.opacity": 0.85
+    },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
+        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.opacity": 1.0
+    },
+
+//
+// SIDEBAR - GENERAL FILE ICONS
+//
+/*
+    // Sidebar group closed
+    {
+        "class": "disclosure_button_control",
+        "content_margin": [8, 8],
+        "layer0.texture": "sb-sublimeTheme/Assets/group-closed.png",
+        "layer0.opacity": 0.42,
+        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "disclosure_button_control",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.opacity": 0.5
+    },
+    {
+        "class": "disclosure_button_control",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.opacity": 1.0
+    },
+    // Sidebar group open
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "sb-sublimeTheme/Assets/group-open.png"
+    },
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+    },
+    */
+    // Sidebar folder closed
+    {
+        "class": "icon_folder",
+        "layer0.texture": "sb-sublimeTheme/Assets/folder-closed.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "sb-sublimeTheme/Assets/folder-closed-hover.png"
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "sb-sublimeTheme/Assets/folder-closed-selected.png"
+    },
+    // Sidebar folder open
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "sb-sublimeTheme/Assets/folder-open.png"
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "hover"]}],
+        "layer0.texture": "sb-sublimeTheme/Assets/folder-open-hover.png"
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
+        "layer0.texture": "sb-sublimeTheme/Assets/folder-open-selected.png"
+    },
+    // Sidebar folder loading
+    {
+        "class": "icon_folder_loading",
+        "layer0.texture":
+        {
+            "keyframes":
+            [
+                "sb-sublimeTheme/Assets/spinner/spinner7.png",
+                "sb-sublimeTheme/Assets/spinner/spinner6.png",
+                "sb-sublimeTheme/Assets/spinner/spinner5.png",
+                "sb-sublimeTheme/Assets/spinner/spinner4.png",
+                "sb-sublimeTheme/Assets/spinner/spinner3.png",
+                "sb-sublimeTheme/Assets/spinner/spinner2.png",
+                "sb-sublimeTheme/Assets/spinner/spinner1.png",
+                "sb-sublimeTheme/Assets/spinner/spinner.png"
+            ],
+            "loop": true,
+            "frame_time": 0.075,
+        },
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+//    Sidebar file icons
+    {
+        "class": "icon_file_type",
+        // layer0.texture is filled in by code with the relevant icon name
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+
+
+
 {
 "class": "minimap_control",
 "viewport_color": [68, 68, 68, 96]
@@ -841,7 +1005,9 @@
 "class": "icon_file_type",
 "content_margin": [0,0]
 },
-*/{
+*/
+/*
+{
 "class": "icon_folder",
 "content_margin": [0,0]
 },
@@ -849,4 +1015,106 @@
 "class": "icon_folder_loading",
 "content_margin": [0,0]
 }
+*/
+
+
+
+
+
+
+
+//
+// BOTTOM PANEL ICONS - GROUP 1
+//
+
+    // Regex search button
+    {
+        "class": "icon_regex",
+        "layer0.texture": "sb-sublimeTheme/Assets/icon-regex.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [0, 0, 0],
+        "content_margin": [9, 9]
+    },
+    // Case sensitive search button
+    {
+        "class": "icon_case",
+        "layer0.texture": "sb-sublimeTheme/Assets/icon-case.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [0, 0, 0],
+        "content_margin": [9, 9]
+    },
+    // Match whole word search button
+    {
+        "class": "icon_whole_word",
+        "layer0.texture": "sb-sublimeTheme/Assets/icon-word.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [0, 0, 0],
+        "content_margin": [9, 9]
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES)
+//
+
+    // Show search context button
+    {
+        "class": "icon_context",
+        "layer0.texture": "sb-sublimeTheme/Assets/icon-context.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [0, 0, 0],
+        "content_margin": [9, 9]
+    },
+    // Use search buffer
+    {
+        "class": "icon_use_buffer",
+        "layer0.texture": "sb-sublimeTheme/Assets/icon-buffer.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [0, 0, 0],
+        "content_margin": [9, 9]
+    },
+    // Search wrap button
+    {
+        "class": "icon_wrap",
+        "layer0.texture": "sb-sublimeTheme/Assets/icon-wrap.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [0, 0, 0],
+        "content_margin": [9, 9]
+    },
+    // Search in selection button
+    {
+        "class": "icon_in_selection",
+        "layer0.texture": "sb-sublimeTheme/Assets/icon-selection.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [0, 0, 0],
+        "content_margin": [9, 9]
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 3
+//
+
+    // Preserve case button
+    {
+        "class": "icon_preserve_case",
+        "layer0.texture": "sb-sublimeTheme/Assets/icon-preserve.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [0, 0, 0],
+        "content_margin": [9, 9]
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 4
+//
+
+    // Highlight results button
+    {
+        "class": "icon_highlight",
+        "layer0.texture": "sb-sublimeTheme/Assets/icon-highlight.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [0, 0, 0],
+        "content_margin": [9, 9]
+    },
+
+
+
 ]
